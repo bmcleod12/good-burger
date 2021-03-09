@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
         const hbsObject = {
             burgers: data,
         };
-        console.log(hbsObject);
+        console.log("in burgers_controllers GET route: ", hbsObject);
         res.render('index', hbsObject);
     });
 });        
@@ -23,7 +23,7 @@ router.post('/api/burgers', (req, res) => {
 router.put('/api/burgers/:id', (req, res) => {
     const condition = `id = ${req.params.id}`;
     
-    console.log('condition', condition);
+    console.log('condition from burgers_controllers PUT route', condition);
     
     burger.updateOne(
         {

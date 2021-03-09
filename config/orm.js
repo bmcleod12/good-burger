@@ -53,7 +53,7 @@ const orm = {
         queryString += printQuestionMarks(vals.length);
         queryString += ') ';
     
-        console.log(queryString);
+        console.log("from orm.js INSERTONE method: ", queryString);
     
         connection.query(queryString, vals, (err, result) => {
           if (err) {
@@ -71,7 +71,7 @@ const orm = {
         queryString += ' WHERE ';
         queryString += condition;
     
-        console.log(queryString);
+        console.log("from orm.js UPDATEONE method: ", queryString);
         connection.query(queryString, (err, result) => {
           if (err) {
             throw err;
