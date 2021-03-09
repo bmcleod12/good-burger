@@ -1,0 +1,12 @@
+<form id="updateplan" class="button-size">
+  <select name="id">
+    {{#each plans}}
+    <option value="{{this.id}}">{{this.plan}}</option>
+    {{/each}}
+  </select>
+  <textarea type="text" name="plan" placeholder="plan"></textarea>
+  <button type="submit">Devour it!</button>
+</form>
+
+
+     {{!-- Create a button in `index.handlebars` that will submit the user input into the database. --}}
