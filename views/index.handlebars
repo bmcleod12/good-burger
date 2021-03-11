@@ -1,32 +1,34 @@
-<h1>Burgers!</h1>
+<div>
+  <img src="../public/assets/images/burger.jpg" alt="Burger cartoon."/>
+</div>
 
-<h2>Burgers that are not devoured!</h2>
+<h1 class="text-5xl text-center p-3 text-red-700">Burger Log</h1>
 
-<ul>
-  {{#each burgers}}
-  {{#unless devoured}}
-  {{> burgers/burger-block sleep=true}}
-  {{/unless}}
-  {{/each}}
-</ul>
-
-<h2>Burgers that are devoured!</h2>
-
-<ul>
-  {{#each burgers}}
-  {{#if devoured}}
-  {{> burgers/burger-block sleep=false}}
-  {{/if}}
-  {{/each}}
-</ul>
-
-<h2>Add a Burger</h2>
-<form id="create-form">
-
-  <div class="form-group">
-    <label for="newburger">Burger Name:</label>
-    <input type="text" id="newburger" name="burger">
+<div class="grid grid-cols-2 gap-4 p-3">
+  <div>
+    <h2>Burgers that are not devoured!</h2>
+    <ol class="list-decimal p-3">
+      {{#each burgers}}
+      {{#unless devoured}}
+      {{> burgers/burger-block sleep=true}}
+      {{/unless}}
+      {{/each}}
+    </ol>
   </div>
 
-  <button type="submit">Add Burger</button>
+  <div>
+    <h2>Burgers that are devoured!</h2>
+    <ol class="list-decimal p-3">
+      {{#each burgers}}
+      {{#if devoured}}
+      {{> burgers/burger-block sleep=false}}
+      {{/if}}
+      {{/each}}
+    </ol>
+  </div>
+</div>
+
+<form id="create-form">
+    <input class="border-2 p-3" type="text" id="newburger" name="burger">
+  <button type="submit" class="bg-blue-900 hover:bg-white font-medium text-white hover:text-blue-900 p-3 rounded-lg">Add Burger</button>
 </form>
