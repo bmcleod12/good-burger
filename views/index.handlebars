@@ -1,20 +1,32 @@
-<h1>Task Saver</h1>
+<h1>Burgers!</h1>
 
-<h3>Save the tasks you need to get to later</h3>
+<h2>Burgers that are not devoured!</h2>
 
 <ul>
   {{#each burgers}}
-  	<li>
-  	   <p>ID: {{this.id}}</p>
-       <p>Burger: {{this.burger}}</p>
-  	</li>
+  {{#unless devoured}}
+  {{> burgers/burger-block sleep=true}}
+  {{/unless}}
   {{/each}}
 </ul>
 
+<h2>Burgers that are devoured!</h2>
+
+<ul>
+  {{#each burgers}}
+  {{#if devoured}}
+  {{> burgers/burger-block sleep=false}}
+  {{/if}}
+  {{/each}}
+</ul>
+
+<h2>Add a Burger</h2>
 <form id="create-form">
+
   <div class="form-group">
-    <label for="new-burger">Create a Burger:</label>
-    <input type="text" id="new-burger" name="burger">
+    <label for="newburger">Burger Name:</label>
+    <input type="text" id="newburger" name="burger">
   </div>
-	<button type="submit">Add Burger</button>
+
+  <button type="submit">Add Burger</button>
 </form>
