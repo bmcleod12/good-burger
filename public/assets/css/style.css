@@ -5,7 +5,10 @@ body {
 li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
+}
+
+input {
+  width: 20rem;
 }
 
 .label {
