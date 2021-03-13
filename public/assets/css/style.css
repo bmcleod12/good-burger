@@ -10,17 +10,3 @@ li {
 input {
   width: 20rem;
 }
-
-.label {
-  font-weight: bold;
-}
-
-.create-form {
-  padding: 5px;
-  margin: 5px;
-  background: aqua;
-}
-
-.form-group {
-  margin-bottom: 5px;
-}

@@ -16,7 +16,7 @@
     <ol class="list-decimal p-3 text-xl">
       {{#each burgers}}
       {{#unless devoured}}
-      {{> burgers/burger-block sleep=true}}
+      {{> burgers/burger-block devoured=true}}
       {{/unless}}
       {{/each}}
     </ol>
@@ -27,7 +27,7 @@
     <ol class="list-decimal p-3 text-xl">
       {{#each burgers}}
       {{#if devoured}}
-      {{> burgers/burger-block sleep=false}}
+      {{> burgers/burger-block devoured=false}}
       {{/if}}
       {{/each}}
     </ol>
