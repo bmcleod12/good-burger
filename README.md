@@ -1,6 +1,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # Good Burger Log
+This app allows you to keep track of burgers you have tried and would like to try
+
+It has been deployed to Heroku: https://frozen-hollows-62628.herokuapp.com/
 
 ## Table of Contents
 
@@ -10,23 +13,27 @@
 
 ## Walkthrough
 
+To use this application, you can visit the deployed Heroku version here: https://frozen-hollows-62628.herokuapp.com/ or download the files from the repo.
+
+1. Upon opening the application, you will be presented with a log of burgers: some marked to be devoured; some already devoured:
+
+<img alt="Freshly loaded app." src="./public/assets/screenshots/log1.PNG"/>
+
 ## Technologies
+
+This application uses:
+* Node.js
+* Express
+* Express Handlebars
+* JAWSDB
+* MYSQL
+* CSS
+* Tailwindcss
+* JavaScript
+* HTML
 
 ## Future Enhancements
 
-### Important
-
-	@@ -24,71 +30,14 @@ When trying to connect remotely to your Heroku database on an open network such
-
-* [Check out this video of the app for a run-through of how it works](https://youtu.be/msvdn95x9OM).
-
-### Submission on BCS
-
-* **This assignment must be deployed.** * Please submit both the deployed Heroku link to your homework AND the link to the Github Repository!
-
-### Reminder: Submission on BCS
-
-* Please submit both the deployed Heroku link to your homework AND the link to the Github Repository!
 
 ### Add To Your Portfolio
 
